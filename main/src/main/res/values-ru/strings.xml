@@ -314,7 +314,7 @@
     <string name="logview_options">Настройки вида</string>
     <string name="unhandled_exception">Неопознанная ошибка: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Если на вашем устройстве есть root, можете установить &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; и &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;модуль автоматического подтверждения диалога подключения VPN&lt;/a&gt; на свой страх и риск</string>
+    <string name="faq_system_dialog_xposed">Если на вашем устройстве есть root, можете установить &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; и &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;модуль автоматического подтверждения диалога подключения VPN&lt;/a&gt; на свой страх и риск</string>
     <string name="full_licenses">Полные тексты лицензий</string>
     <string name="blocklocal_summary">Сети, доступные напрямую через локальный интерфейс, не будут маршрутизированы через VPN. Отключите эту функцию, чтобы направить трафик через VPN.</string>
     <string name="blocklocal_title">Не использовать VPN для локальных адресов</string>
@@ -359,7 +359,7 @@
     <string name="ab_only_cidr">Android поддерживает только CIDR маршруты к VPN. Поскольку не CIDR маршруты почти никогда не используются, OpenVPN для Android будет использовать /32 для не CIDR маршрутов и выдавать предупреждение.</string>
     <string name="ab_tethering_44">Тетеринг/раздача интернета работает, когда активен VPN. Модемное соединение (тетеринг) НЕ БУДЕТ использовать VPN.</string>
     <string name="ab_kitkat_mss">Ранние версии KitKat устанавливают неверное значение MSS для TCP-соединений (#61948). Попробуйте включить функцию mssfix, чтобы обойти эту ошибку.</string>
-    <string name="ab_proxy">Android будет продолжать использовать ваши настройки прокси, указанные для мобильного/Wi-Fi соединения, когда не установлен DNS сервер. OpenVPN for Android предупредит вас об этом в журнале.<p>Когда VPN устанавливает DNS сервер Android не использует прокси. Для установки прокси для VPN соединения нет API.</p></string>
+    <string name="ab_proxy">Android будет продолжать использовать ваши настройки прокси, указанные для мобильного/Wi-Fi соединения, когда не установлен DNS сервер. OpenVPN Client предупредит вас об этом в журнале.<p>Когда VPN устанавливает DNS сервер Android не использует прокси. Для установки прокси для VPN соединения нет API.</p></string>
     <string name="ab_lollipop_reinstall">Приложения VPN могут перестать работать после удаления и повторной установки. Подробности см. #80074</string>
     <string name="ab_not_route_to_vpn">Сконфигурированный IP-адрес клиента и IP-адреса в его подсети (согласно сетевой маске) не направляются через VPN. OpenVPN обходит этот баг, явно добавляя маршрут, который соответствует клиентскому IP и его сетевой маске</string>
     <string name="ab_persist_tun">Открытие туннеля, когда туннель уже активен, для его постоянного удержания, может привести к ошибке и VPNServices закроется на устройстве. Для возобновления работы VPN требуется перезагрузка. OpenVPN для Android пытается избежать установки второго туннеля, и если действительно нужно - сначала закрывает текущий туннель, перед открытием нового, чтобы избежать краха программы. Это может привести к маленькому интервалу, в котором передача пакетов происходит по обычному (не VPN) соединению. Даже с этими ухищрениями VPNServices иногда крашится и требует перезагрузки устройства.</string>
@@ -467,7 +467,7 @@
     <string name="openvpn3_socksproxy">Реализация OpenVPN 3 на C ++ не поддерживает подключение через Socks-прокси</string>
     <string name="no_orbotfound">Приложение Orbot не найдено. Пожалуйста, установите Orbot или настройте Socks v5 вручную.</string>
     <string name="faq_remote_api_title">Удалённый API</string>
-    <string name="faq_remote_api">\'OpenVPN для Android\' поддерживает два удаленных API: сложный API с использованием AIDL (remoteEXample в репозитории git) и простой с использованием Intents.&lt;p&gt;Примеры использования оболочки adb и intents. Замените имя профиля на свое&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN de.blinkt.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e de.blinkt.openvpn.api.profileName Blinkt de.blinkt.openvpn/.api.ConnectVPN</string>
+    <string name="faq_remote_api">\'OpenVPN для Android\' поддерживает два удаленных API: сложный API с использованием AIDL (remoteEXample в репозитории git) и простой с использованием Intents.&lt;p&gt;Примеры использования оболочки adb и intents. Замените имя профиля на свое&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN com.amdexa.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e com.amdexa.openvpn.api.profileName Blinkt com.amdexa.openvpn/.api.ConnectVPN</string>
     <string name="enableproxyauth">Включить проверку подлинности прокси</string>
     <string name="error_orbot_and_proxy_options">Нельзя одновременно использовать дополнительный параметр http-proxy-option и интеграцию Orbot.</string>
     <string name="info_from_server">Информация с сервера: \'%s\'</string>

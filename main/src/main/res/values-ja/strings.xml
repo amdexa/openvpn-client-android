@@ -5,7 +5,7 @@
   ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
   -->
 <resources>
-    <string name="app">OpenVPN for Android</string>
+    <string name="app">OpenVPN Client</string>
     <string name="address">サーバーアドレス:</string>
     <string name="port">ポート番号：</string>
     <string name="location">場所</string>
@@ -312,7 +312,7 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="tls_remote_deprecated"> tls-remote (非推奨)</string>
     <string name="help_translate">次のURLにアクセスすると、翻訳作業を手伝うことができます http://crowdin.net/project/ics-openvpn/invite</string>
     <string name="prompt">%1$s は %2$s を制御しようとしています。</string>
-    <string name="remote_warning">このまま進むと、あなたはOpenVPN for Androidの完全な制御とすべての通信を傍受する権限をアプリケーションに対し与えることになります。<b>アプリケーションが信頼できない限り、承諾しないでください。</b>さもないと、あなたのデータがマルウェアにより漏洩させられる危険があります。</string>
+    <string name="remote_warning">このまま進むと、あなたはOpenVPN Clientの完全な制御とすべての通信を傍受する権限をアプリケーションに対し与えることになります。<b>アプリケーションが信頼できない限り、承諾しないでください。</b>さもないと、あなたのデータがマルウェアにより漏洩させられる危険があります。</string>
     <string name="remote_trust">私はこのアプリケーションを信頼します</string>
     <string name="no_external_app_allowed">外部APIの使用を許可されたアプリはありません</string>
     <string name="allowed_apps">許可アプリ: %s</string>
@@ -332,7 +332,7 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="vpnbehaviour">VPN の挙動</string>
     <string name="allow_vpn_changes">VPNプロファイルの変更を許可する</string>
     <string name="hwkeychain">ハードウェアのキーストア：</string>
-    <string name="permission_icon_app">OpenVPN for Androidを使用しようと試みるアプリのアイコン</string>
+    <string name="permission_icon_app">OpenVPN Clientを使用しようと試みるアプリのアイコン</string>
     <string name="faq_vpndialog43">Android 4.3で使用した場合、VPN確認画面はオーバーレイ(常に画面全体を覆う表示)を使用するアプリから保護されます。この結果、ダイアログはタッチ操作に反応しなくなります。もしあなたがオーバーレイを使用したアプリを使っていたらこの挙動に遭遇するでしょう。もしあなたがこういった無作法なアプリを見つけたら、そのアプリの作者に連絡しましょう。この問題はAndroid 4.3以降でVPNアプリケーションすべてに影響します。詳細は &lt;a href=\"https://github.com/schwabe/ics-openvpn/issues/185\"&gt;Issue 185&lt;a&gt; を参照してください。</string>
     <string name="faq_vpndialog43_title">VPN確認ダイアログ</string>
     <string name="donatePlayStore">ほかの手段として、Play Storeで私に寄付できます。</string>
@@ -350,7 +350,7 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="logview_options">オプションを表示</string>
     <string name="unhandled_exception">未処理の例外: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">もしあなたがデバイスをroot化しているのであれば、 &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt;と&lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;VPN Dialog confirm module&lt;/a&gt; を自己責任においてインストールできます</string>
+    <string name="faq_system_dialog_xposed">もしあなたがデバイスをroot化しているのであれば、 &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt;と&lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;VPN Dialog confirm module&lt;/a&gt; を自己責任においてインストールできます</string>
     <string name="full_licenses">完全なライセンス告知</string>
     <string name="blocklocal_summary">ローカルインターフェイスに直接接続されているネットワークはVPNを経由しません。
 このオプションを外すとローカルネットワーク宛のすべての通信をVPNにリダイレクトします。</string>
@@ -390,16 +390,16 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="duplicate_vpn">VPNプロファイルを複製</string>
     <string name="duplicate_profile_title">プロファイルの複製：%s</string>
     <string name="show_log">ログを表示</string>
-    <string name="faq_android_clients">Android用のOpenVPNクライアントは複数あります。主なものとしては「OpenVPN for Android」(このアプリ)「OpenVPN Connect」「OpenVPN Settings」があります。&lt;p&gt;クライアントは大きく2種類に分けられます。「OpenVPN for Android」「OpenVPN Connect」は公式なVPNService API (Android 4.0以降)を使用しroot権限は不要です。「OpenVPN Settings」はroot権限が必要です。&lt;p&gt;「OpenVPN for Android」はオープンソースのクライアントでArne Schwabeにより開発されています。詳しい人をターゲットとして、多くの設定とファイルからのプロファイルインポート、アプリ内でのプロファイル設定変更ができるようになっています。コミュニティ版のOpenVPN 2.xのソースコードをベースとしています。コミュニティの準公式クライアントとみなせます。&lt;p&gt;「OpenVPN Connect」はOpenVPN Technologies, Incにより開発されておりオープンソースではありません。より一般的な使い方と平均的なユーザをターゲットとしており、OpenVPNプロファイルのインポートができます。OpenVPNプロトコルのC++による再実装コードをベースとしています(これはOpenVPN Technologies, IncがiOS版を公開するために必要でした)。OpenVPN Technologies, Incの公式クライアントです。&lt;p&gt; 「OpenVPN Settings」は最も古いクライアントであり、オープンソースのOpenVPN用のUIです。「OpenVPN for Android」との大きな違いはroot権限を必要とし、かつVPNService APIを使用しないことです。Android 4.0以降に依存しません。</string>
+    <string name="faq_android_clients">Android用のOpenVPNクライアントは複数あります。主なものとしては「OpenVPN Client」(このアプリ)「OpenVPN Connect」「OpenVPN Settings」があります。&lt;p&gt;クライアントは大きく2種類に分けられます。「OpenVPN Client」「OpenVPN Connect」は公式なVPNService API (Android 4.0以降)を使用しroot権限は不要です。「OpenVPN Settings」はroot権限が必要です。&lt;p&gt;「OpenVPN Client」はオープンソースのクライアントでArne Schwabeにより開発されています。詳しい人をターゲットとして、多くの設定とファイルからのプロファイルインポート、アプリ内でのプロファイル設定変更ができるようになっています。コミュニティ版のOpenVPN 2.xのソースコードをベースとしています。コミュニティの準公式クライアントとみなせます。&lt;p&gt;「OpenVPN Connect」はOpenVPN Technologies, Incにより開発されておりオープンソースではありません。より一般的な使い方と平均的なユーザをターゲットとしており、OpenVPNプロファイルのインポートができます。OpenVPNプロトコルのC++による再実装コードをベースとしています(これはOpenVPN Technologies, IncがiOS版を公開するために必要でした)。OpenVPN Technologies, Incの公式クライアントです。&lt;p&gt; 「OpenVPN Settings」は最も古いクライアントであり、オープンソースのOpenVPN用のUIです。「OpenVPN Client」との大きな違いはroot権限を必要とし、かつVPNService APIを使用しないことです。Android 4.0以降に依存しません。</string>
     <string name="faq_androids_clients_title">Android用OpenVPNクライアント間の違い</string>
     <string name="ignore_multicast_route">マルチキャストされた経路を無視します: %s</string>
-    <string name="ab_only_cidr">AndroidはVPNへの経路としてCIDRのみサポートします。非CIDR経路はほとんど使用されないため、OpenVPN for Androidは非CIDR経路に/32を使用し、警告を発します。</string>
+    <string name="ab_only_cidr">AndroidはVPNへの経路としてCIDRのみサポートします。非CIDR経路はほとんど使用されないため、OpenVPN Clientは非CIDR経路に/32を使用し、警告を発します。</string>
     <string name="ab_tethering_44">テザリングはVPNが接続中でも有効です。ただしテザリングした通信はVPNを使用できません。</string>
     <string name="ab_kitkat_mss">初期のKitKatはTCP接続において間違ったMSS値を使用します。(#61948). このバグを回避するにはmssfixオプションの有効化を試してください。</string>
-    <string name="ab_proxy">AndroidはDNSサーバの設定がされていない場合、モバイル/WiFiのプロキシ設定を使用し続けます。OpenVPN for Androidはこれについてログにて警告します。<p>VPNがDNSサーバを設定した場合、Androidはプロキシを使用しなくなります。VPNでプロキシを使用するよう設定するAPIは存在しません。</p></string>
+    <string name="ab_proxy">AndroidはDNSサーバの設定がされていない場合、モバイル/WiFiのプロキシ設定を使用し続けます。OpenVPN Clientはこれについてログにて警告します。<p>VPNがDNSサーバを設定した場合、Androidはプロキシを使用しなくなります。VPNでプロキシを使用するよう設定するAPIは存在しません。</p></string>
     <string name="ab_lollipop_reinstall">VPNアプリはアンインストール／再インストール時に正常に動作しなくなることがあります。詳細は#80074を参照してください。</string>
     <string name="ab_not_route_to_vpn">設定されたクライアントIPとネットマスクに含まれるIPアドレスはVPNを経由しません。OpenVPNは明示的に経路を追加することでこのバグを回避します。</string>
-    <string name="ab_persist_tun">ほかのTUNデバイスが使用されている間に、永続的なTUNデバイス機能のためにTUNデバイスを開こうとするとデバイス上のVPNServiceがクラッシュします。VPNが再び動作するためにはデバイスの再起動が必要です。OpenVPN for Androidはクラッシュを避けるため、新しいTUNデバイスを開く前に現在のTUNデバイスを閉じます。これは短期間、パケットが非VPN接続に送信される原因になります。この回避策があっても、VPNServiceは時々クラッシュし、デバイスの再起動が必要になります。</string>
+    <string name="ab_persist_tun">ほかのTUNデバイスが使用されている間に、永続的なTUNデバイス機能のためにTUNデバイスを開こうとするとデバイス上のVPNServiceがクラッシュします。VPNが再び動作するためにはデバイスの再起動が必要です。OpenVPN Clientはクラッシュを避けるため、新しいTUNデバイスを開く前に現在のTUNデバイスを閉じます。これは短期間、パケットが非VPN接続に送信される原因になります。この回避策があっても、VPNServiceは時々クラッシュし、デバイスの再起動が必要になります。</string>
     <string name="ab_secondary_users">VPNはほかのユーザーに対しては動作しません。</string>
     <string name="ab_kitkat_reconnect">"複数のユーザが、VPNアプリ使用中にモバイル接続が頻繁に欠落すると報告しています。この挙動は特定のプロバイダ／デバイスの組み合わせでのみ発生すると思われ、これまでのところこのバグに対する原因や回避策は特定されていません。"</string>
     <string name="ab_vpn_reachability_44">VPNなしでも到達可能なネットワークにのみVPN経由で到達できる場合。IPv6 VPN は動作しません。</string>
@@ -419,7 +419,7 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="ab_persist_tun_title">持続的なTUNモード</string>
     <string name="version_and_later">%s以降</string>
     <string name="tls_cipher_alert_title">SSL23_GET_SERVER_HELLO:sslv3 alert handshake failureで接続が失敗する</string>
-    <string name="tls_cipher_alert">OpenVPN for Androidの新しいバージョン(0.6.29/March 2015)は、暗号化スイートが許す限りよりセキュアなデフォルトを使用します(tls-cipher \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\")。 残念なことに、欠陥のある暗号化スイートあるいは輸出用暗号化スイート、特にPerfect Forward Secrecy (Diffie-Hellman)に欠陥がある暗号化スイートでは問題を生じます。これらは通常、サーバのtls-cipherの設定や最小限のSSLを実装した組み込みOS(例えば MikroTik)で、よりTLSセキュリティを強化しようとした善意での、しかし不完全な試みにより生じます\nこの問題を解決するには、サーバ側で tls-cipher に \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\" のような妥当なデフォルトを設定します。この問題のクライアント側の回避策としては、カスタムオプションに tls-cipher DEFAULT を追加します。</string>
+    <string name="tls_cipher_alert">OpenVPN Clientの新しいバージョン(0.6.29/March 2015)は、暗号化スイートが許す限りよりセキュアなデフォルトを使用します(tls-cipher \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\")。 残念なことに、欠陥のある暗号化スイートあるいは輸出用暗号化スイート、特にPerfect Forward Secrecy (Diffie-Hellman)に欠陥がある暗号化スイートでは問題を生じます。これらは通常、サーバのtls-cipherの設定や最小限のSSLを実装した組み込みOS(例えば MikroTik)で、よりTLSセキュリティを強化しようとした善意での、しかし不完全な試みにより生じます\nこの問題を解決するには、サーバ側で tls-cipher に \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\" のような妥当なデフォルトを設定します。この問題のクライアント側の回避策としては、カスタムオプションに tls-cipher DEFAULT を追加します。</string>
     <string name="message_no_user_edit">このプロファイルは外部のアプリ(%s)より追加され、ユーザによる編集が無効化されています</string>
     <string name="crl_file">証明書失効リスト</string>
     <string name="service_restarted">OpenVPNを再起動しています(クラッシュしたか、メモリ不足により停止させられたため)</string>
@@ -429,7 +429,7 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="clear_log_on_connect">新規接続時にログをクリアする</string>
     <string name="connect_timeout">接続タイムアウト</string>
     <string name="no_allowed_app">許可されたアプリがありません。すべてのアプリを不許可にする場合は最低でも１つのアプリを許可する必要があるため、このアプリ (%s) を追加します。</string>
-    <string name="query_permissions_sdcard">OpenVPN for Androidは見失ったファイルを自動でSDカードから再探索することができます。このメッセージをタップして権限のリクエストを行ってください。</string>
+    <string name="query_permissions_sdcard">OpenVPN Clientは見失ったファイルを自動でSDカードから再探索することができます。このメッセージをタップして権限のリクエストを行ってください。</string>
     <string name="protocol">プロトコル</string>
     <string name="enabled_connection_entry">有効</string>
     <string name="abi_mismatch">Preferred native ABI precedence of this device (%1$s) and ABI reported by native libraries (%2$s) mismatch</string>
@@ -506,7 +506,7 @@ Android 4.4以上はポリシールーティングを使用します。route/ifc
     <string name="openvpn3_socksproxy">OpenVPN 3 C ++実装は、Socksプロキシ経由の接続をサポートしません</string>
     <string name="no_orbotfound">Orbotアプリが見つかりません。Orbotをインストールするか手動Socks v5統合を使用してください</string>
     <string name="faq_remote_api_title">リモートAPI</string>
-    <string name="faq_remote_api">OpenVPN for Androidは2つのリモートAPIをサポートします。AIDLによる洗練されたAPI(gitリポジトリのremoteEXample)およびIntentを使用したシンプルなものです。&lt;p&gt;adbシェルとIntentを使用した例です。profilenameをあなたのプロファイル名に置き換えてください。&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN de.blinkt.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e de.blinkt.openvpn.api.profileName Blinkt de.blinkt.openvpn/.api.ConnectVPN</string>
+    <string name="faq_remote_api">OpenVPN Clientは2つのリモートAPIをサポートします。AIDLによる洗練されたAPI(gitリポジトリのremoteEXample)およびIntentを使用したシンプルなものです。&lt;p&gt;adbシェルとIntentを使用した例です。profilenameをあなたのプロファイル名に置き換えてください。&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN com.amdexa.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e com.amdexa.openvpn.api.profileName Blinkt com.amdexa.openvpn/.api.ConnectVPN</string>
     <string name="enableproxyauth">プロキシ認証を有効にする</string>
     <string name="error_orbot_and_proxy_options">http-proxy-option設定とOrbot統合は同時に使用できません</string>
     <string name="info_from_server">サーバからの情報: \'%s\'</string>

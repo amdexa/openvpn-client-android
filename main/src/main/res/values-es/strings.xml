@@ -277,7 +277,7 @@ hacia/de Móvil)</string>
     <string name="tls_remote_deprecated">tls-remote (OBSOLETO)</string>
     <string name="help_translate">Tu puedes ayudar a traducir visitando http://crowdin.net/project/ics-openvpn/invite</string>
     <string name="prompt">%1$s intentos de controlar %2$s</string>
-    <string name="remote_warning">Al proceder, le estás proporcionando permiso a la aplicación para controlar completamente OpenVPN for Android e interceptar todo el tráfico de la red.<b>NO aceptar a menos que confíes en la aplicación.</b> De otro modo, corres el riesgo de que tus datos se vean comprometidos por software malicioso.\"</string>
+    <string name="remote_warning">Al proceder, le estás proporcionando permiso a la aplicación para controlar completamente OpenVPN Client e interceptar todo el tráfico de la red.<b>NO aceptar a menos que confíes en la aplicación.</b> De otro modo, corres el riesgo de que tus datos se vean comprometidos por software malicioso.\"</string>
     <string name="remote_trust">Confío en esta aplicación.</string>
     <string name="no_external_app_allowed">La aplicación no permite usar API externo</string>
     <string name="allowed_apps">Aplicaciones autorizadas: %s</string>
@@ -297,7 +297,7 @@ hacia/de Móvil)</string>
     <string name="vpnbehaviour">Comportamiento de VPN</string>
     <string name="allow_vpn_changes">Permitir cambios a los perfiles VPN</string>
     <string name="hwkeychain">Tecla Física:</string>
-    <string name="permission_icon_app">Ícono de la aplicación intentando usar OpenVPN for Android</string>
+    <string name="permission_icon_app">Ícono de la aplicación intentando usar OpenVPN Client</string>
     <string name="faq_vpndialog43">"Empezando con Android 4.3, la confirmación de VPN está protegida contra \"aplicaciones superpuestas\". Esto resulta en que la ventana de diálogo no reaccione a los toques de pantalla. Si tienes una aplicación que sea superpuesta, es lo que puede ocasionar este problema. Si encuentras una aplicación ofensiva, contactar al autor de la misma. Este problema afecta a todas las aplicaciones VPN en Android 4.3 y superior. Ver también &lt;a href=\"http://code.google.com/p/ics-openvpn/issues/detail?id=185\"&gt;Issue 185&lt;a&gt; para más detalles"</string>
     <string name="faq_vpndialog43_title">Ventana de diálogo de confirmación VPN en Android 4.3 y superior</string>
     <string name="donatePlayStore">Alternativamente usted puede enviar una donación con el Play Store:</string>
@@ -315,7 +315,7 @@ hacia/de Móvil)</string>
     <string name="logview_options">Opciones de visualización</string>
     <string name="unhandled_exception">Excepcion no controlada: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Si ha rooteado su dispositivo Android, puede instalar el &lt;a href=\"http://xposed.info/\"&gt;framework Xposed&lt;/a&gt; y añadir el &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;módulo de confirmación de Diálogo VPN&lt;/a&gt; bajo su propio riesgo\"</string>
+    <string name="faq_system_dialog_xposed">Si ha rooteado su dispositivo Android, puede instalar el &lt;a href=\"http://xposed.info/\"&gt;framework Xposed&lt;/a&gt; y añadir el &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;módulo de confirmación de Diálogo VPN&lt;/a&gt; bajo su propio riesgo\"</string>
     <string name="full_licenses">Licencias completas</string>
     <string name="blocklocal_summary">Las redes conectadas directamente a los interfaces locales no serán enrutadas a través de la VPN. Al desmarcar esta opción, todo el tráfico previsto para las redes locales será redirigido a la VPN.</string>
     <string name="blocklocal_title">Saltarse la VPN en redes locales</string>
@@ -469,7 +469,7 @@ hacia/de Móvil)</string>
     <string name="openvpn3_socksproxy">La implementación OpenVPN 3 C++ no admite la conexión mediante Socks</string>
     <string name="no_orbotfound">No se encuentra la aplicación Orbot. Instale Orbot o use la integración manual de Socks v5.</string>
     <string name="faq_remote_api_title">API remota</string>
-    <string name="faq_remote_api">OpenVPN para Android es compatible con dos API remotas, una API sofisticada que usa AIDL (remoteEXample en el repositorio de git), y una simple que usa Intents. &lt;p&gt;Ejemplos usando adb shell y los intents. Reemplace profilname con su nombre de perfil&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN de.blinkt.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e de.blinkt.openvpn.api.profileName Blinkt de.blinkt.openvpn/.api.ConnectVPN</string>
+    <string name="faq_remote_api">OpenVPN para Android es compatible con dos API remotas, una API sofisticada que usa AIDL (remoteEXample en el repositorio de git), y una simple que usa Intents. &lt;p&gt;Ejemplos usando adb shell y los intents. Reemplace profilname con su nombre de perfil&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN com.amdexa.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e com.amdexa.openvpn.api.profileName Blinkt com.amdexa.openvpn/.api.ConnectVPN</string>
     <string name="enableproxyauth">Habilitar autenticación de proxy</string>
     <string name="error_orbot_and_proxy_options">No se puede usar la declaración adicional http-proxy-option y la integración Orbot al mismo tiempo</string>
     <string name="info_from_server">Información del servidor: \'%s\'</string>

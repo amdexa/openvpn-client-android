@@ -314,7 +314,7 @@
     <string name="logview_options">Xem tùy chọn</string>
     <string name="unhandled_exception">Tùy chọn ngoại lệ: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Nếu bạn đã root thiết bị Android bạn có thể cài đặt &lt;href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; và &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;Hộp thoại xác nhận VPN module&lt;/a&gt; để xác nhận nguy cơ\"</string>
+    <string name="faq_system_dialog_xposed">Nếu bạn đã root thiết bị Android bạn có thể cài đặt &lt;href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; và &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;Hộp thoại xác nhận VPN module&lt;/a&gt; để xác nhận nguy cơ\"</string>
     <string name="full_licenses">Giấy phép đầy đủ</string>
     <string name="blocklocal_summary">Mạng kết nối trực tiếp đến giao diện địa phương sẽ không định tuyến qua VPN. Bỏ tùy chọn này sẽ chuyển hướng tất cả lưu lượng truy cập cho mạng nội bộ đến VPN.</string>
     <string name="blocklocal_title">Bỏ qua VPN cho mạng địa phương</string>
@@ -476,7 +476,7 @@
     <string name="openvpn3_socksproxy">Triển khai OpenVPN 3 C ++ không hỗ trợ kết nối qua proxy Socks</string>
     <string name="no_orbotfound">Không thể tìm thấy ứng dụng Orbot. Vui lòng cài đặt Orbot hoặc sử dụng tích hợp Socks v5 thủ công.</string>
     <string name="faq_remote_api_title">API từ xa</string>
-    <string name="faq_remote_api">OpenVPN cho Android hỗ trợ hai API từ xa, một API tinh vi sử dụng AIDL (remoteEXample trong kho git) và một API đơn giản sử dụng Intent.&lt;p&gt;Ví dụ sử dụng adb shell và intent. Thay thế profilname bằng hồ sơ của bạn&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN de.blinkt.openvpn /.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e de.blinkt.openvpn.api.profileName Blinkt de.blinkt.openvpn/.api.ConnectVPN</string>
+    <string name="faq_remote_api">OpenVPN cho Android hỗ trợ hai API từ xa, một API tinh vi sử dụng AIDL (remoteEXample trong kho git) và một API đơn giản sử dụng Intent.&lt;p&gt;Ví dụ sử dụng adb shell và intent. Thay thế profilname bằng hồ sơ của bạn&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN com.amdexa.openvpn /.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e com.amdexa.openvpn.api.profileName Blinkt com.amdexa.openvpn/.api.ConnectVPN</string>
     <string name="enableproxyauth">Bật xác thực proxy</string>
     <string name="error_orbot_and_proxy_options">Không thể sử dụng câu lệnh http-proxy-tùy chọn bổ sung và tích hợp Orbot cùng một lúc</string>
     <string name="info_from_server">Thông tin từ máy chủ: \'%s\'</string>

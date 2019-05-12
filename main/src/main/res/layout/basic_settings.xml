@@ -5,7 +5,7 @@
   -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:blinkt="http://schemas.android.com/apk/res-auto"
+    xmlns:amdexa="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:padding="@dimen/vpn_setting_padding"
@@ -81,12 +81,12 @@
             tools:visibility="visible"
             android:visibility="gone" >
 
-            <de.blinkt.openvpn.views.FileSelectLayout
+            <com.amdexa.openvpn.views.FileSelectLayout
                 android:id="@+id/caselect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                blinkt:showClear="true"
-                blinkt:fileTitle="@string/ca_title" />
+                amdexa:showClear="true"
+                amdexa:fileTitle="@string/ca_title" />
 
         </LinearLayout>
 
@@ -97,18 +97,18 @@
             android:orientation="vertical"
             android:visibility="gone" >
 
-            <de.blinkt.openvpn.views.FileSelectLayout
+            <com.amdexa.openvpn.views.FileSelectLayout
                 android:id="@+id/certselect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                blinkt:fileTitle="@string/client_certificate_title" />
+                amdexa:fileTitle="@string/client_certificate_title" />
 
-            <de.blinkt.openvpn.views.FileSelectLayout
+            <com.amdexa.openvpn.views.FileSelectLayout
                 android:id="@+id/keyselect"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                blinkt:certificate="false"
-                blinkt:fileTitle="@string/client_key_title" />
+                amdexa:certificate="false"
+                amdexa:fileTitle="@string/client_key_title" />
 
             <LinearLayout
                 android:id="@+id/key_password_layout"
@@ -142,12 +142,12 @@
             android:orientation="vertical"
             android:visibility="gone" >
 
-            <de.blinkt.openvpn.views.FileSelectLayout
+            <com.amdexa.openvpn.views.FileSelectLayout
                 android:id="@+id/pkcs12select"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                blinkt:certificate="false"
-                blinkt:fileTitle="@string/client_pkcs12_title" />
+                amdexa:certificate="false"
+                amdexa:fileTitle="@string/client_pkcs12_title" />
 
             <TextView
                 style="@style/item"
@@ -232,13 +232,13 @@
                 android:singleLine="false"
                 android:text="@string/static_keys_info" />
         </LinearLayout>
-        <de.blinkt.openvpn.views.FileSelectLayout
+        <com.amdexa.openvpn.views.FileSelectLayout
             android:id="@+id/crlfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            blinkt:certificate="false"
-            blinkt:showClear="true"
-            blinkt:fileTitle="@string/crl_title" />
+            amdexa:certificate="false"
+            amdexa:showClear="true"
+            amdexa:fileTitle="@string/crl_title" />
     </LinearLayout>
 
 </ScrollView>

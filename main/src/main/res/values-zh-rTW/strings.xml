@@ -5,7 +5,7 @@
   ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
   -->
 <resources>
-    <string name="app">OpenVPN for Android</string>
+    <string name="app">OpenVPN Client</string>
     <string name="address">伺服器地址：</string>
     <string name="port">伺服器連接埠：</string>
     <string name="location">位置</string>
@@ -273,7 +273,7 @@
     <string name="tls_remote_deprecated">tls-remote (不建議使用)</string>
     <string name="help_translate">你可以拜訪 http://crowdin.net/project/ics-openvpn/invite 來協助翻譯</string>
     <string name="prompt">%1$s 試圖控制 %2$s</string>
-    <string name="remote_warning">你正在提供這個應用程式完全控制 OpenVPN for Android 與攔截所有網路流量的權限，<b>不允許，除非信任此應用程式。</b>否則，你的資料會受到惡意軟體洩漏的風險。</string>
+    <string name="remote_warning">你正在提供這個應用程式完全控制 OpenVPN Client 與攔截所有網路流量的權限，<b>不允許，除非信任此應用程式。</b>否則，你的資料會受到惡意軟體洩漏的風險。</string>
     <string name="remote_trust">我信任此應用程式</string>
     <string name="no_external_app_allowed">不允許應用程式使用外部 API </string>
     <string name="allowed_apps">允許的應用程式：%s</string>
@@ -293,7 +293,7 @@
     <string name="vpnbehaviour">VPN 行為</string>
     <string name="allow_vpn_changes">允許更改 VPN 設定檔</string>
     <string name="hwkeychain">硬體金鑰庫︰</string>
-    <string name="permission_icon_app">應用程式嘗試使用 OpenVPN for Android 對圖示</string>
+    <string name="permission_icon_app">應用程式嘗試使用 OpenVPN Client 對圖示</string>
     <string name="faq_vpndialog43">\"從 Android 4.3 開始，VPN 確認防止「覆蓋應用程式」，會導致對話框觸碰時沒有反應。如果你的應用程式中有使用覆蓋應用程式的功能，可能或造成這個現象。如果，發現造成這個問題的應用程式，請聯絡這個此應用程式的作者。這個問題會影響到所有在 Android 4.3 及更高版本的 VPN 應用程式。另請參見：See also &lt;a href=\"https://github.com/schwabe/ics-openvpn/issues/185\"&gt;Issue 185&lt;a&gt; 了解更多詳細資訊。</string>
     <string name="faq_vpndialog43_title">VPN 確認對話框</string>
     <string name="donatePlayStore">或者，你可以透過 Play 商店捐贈我：</string>
@@ -311,7 +311,7 @@
     <string name="logview_options">查看選項</string>
     <string name="unhandled_exception">未處理的異常：%1$s \n\n %2$s</string>
     <string name="unhandled_exception_context">%3$s：%1$s \n\n %2$s</string>
-    <string name="faq_system_dialog_xposed">如果你的 Android 裝置已取得 root 權限，你可以自行承擔風險安裝 &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; 和 &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;VPN Dialog confirm module&lt;/a&gt;</string>
+    <string name="faq_system_dialog_xposed">如果你的 Android 裝置已取得 root 權限，你可以自行承擔風險安裝 &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; 和 &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;VPN Dialog confirm module&lt;/a&gt;</string>
     <string name="full_licenses">完整授權</string>
     <string name="blocklocal_summary">直接連線到本機介面的網路將不會被送至 VPN。取消選擇這個選項，將會把所有畚箕網路的流量導向 VPN。</string>
     <string name="blocklocal_title">對區域網路繞過 VPN</string>
@@ -352,10 +352,10 @@
     <string name="faq_android_clients">安卓系統的多個 OpenVPN 用戶端存在。最常見是 OpenVPN 為 Android （此用戶端），OpenVPN 連接和 OpenVPN 設置。 &lt; p &gt; 用戶端可以分為兩組： OpenVPN 為 Android 和 OpenVPN 連接使用官方的 VPNService API （安卓 4.0 +），需要無根、 無使用根 &lt; p &gt; 的 OpenVPN 設置 OpenVPN 的 Android 是開源用戶端和開發的 Arne 米爾克。 它針對更高級的使用者，並提供許多設置和能力，從檔導入設定檔，配置更改內部應用程式的設定檔。用戶端基於 OpenVPN 的社區版本。它基於 OpenVPN 2.x 原始程式碼。此用戶端可以被看作是半正式的社區用戶端。&lt; p &gt; OpenVPN 連接是由 OpenVPN 技術公司開發的非開源用戶端用戶端縮進是一般使用的用戶端和更多針對普通使用者，並允許的 OpenVPN 設定檔導入。此用戶端基於 OpenVPN c + + 重新實現的 OpenVPN 協定 （這要求允許 OpenVPN 技術，公司將發佈 iOS OpenVPN 應用程式）。此用戶端是最古老的用戶端和也的使用者介面對於開放源碼 OpenVPN OpenVPN 技術 &lt; p &gt; OpenVPN 設置的官方用戶端。與安卓系統的 OpenVPN 它需要根和不使用 VPNService API。它不依賴于安卓 4.0 +</string>
     <string name="faq_androids_clients_title">OpenVPN Android 用戶端之間的差異</string>
     <string name="ignore_multicast_route">忽略多點傳送路徑：%s</string>
-    <string name="ab_only_cidr">Android 只支援無類別域間 (CIDR) 路由到此 VPN。因為非無類別域間 (CIDR) 路由幾乎不會被使用，OpenVPN for Android 將使用 /32 非無類別域間 (CIDR) 路由處理這個警告。</string>
+    <string name="ab_only_cidr">Android 只支援無類別域間 (CIDR) 路由到此 VPN。因為非無類別域間 (CIDR) 路由幾乎不會被使用，OpenVPN Client 將使用 /32 非無類別域間 (CIDR) 路由處理這個警告。</string>
     <string name="ab_tethering_44">當 VPN 啟用時，網路共用仍可運作，但網路共用的連線不會透過 VPN。</string>
     <string name="ab_kitkat_mss">早期的 KitKat 版本在 TCP 連線中，設定錯誤的最大分段大小 (MSS) 值 (#61948)。試著開啟 mssfix 選項來繞開這個 bug。</string>
-    <string name="ab_proxy">Android 沒有 DNS 伺服器設定時，會繼續使用你指定的行動/Wi-Fi 連線代理設定。OpenVPN for Android 會在日誌中記錄警告訊息。<p>當 VPN 有設定 DNS 伺服器時，因為，Android API 中無法為 VPN 連線設定代理，所以，將不會使用代理設定。</p></string>
+    <string name="ab_proxy">Android 沒有 DNS 伺服器設定時，會繼續使用你指定的行動/Wi-Fi 連線代理設定。OpenVPN Client 會在日誌中記錄警告訊息。<p>當 VPN 有設定 DNS 伺服器時，因為，Android API 中無法為 VPN 連線設定代理，所以，將不會使用代理設定。</p></string>
     <string name="ab_lollipop_reinstall">當解除安裝或重新安裝，VPN 應用程式也會停止運作。詳細資訊起參閱 #80074</string>
     <string name="ab_not_route_to_vpn">已設定的客戶端 IP 及在此網路遮罩的 IP 不會路由到 VPN。OpenVPN 以明確加入一條對應到客戶端 IP 與此子網路遮罩的路由，來嘗試解決這個問題。</string>
     <string name="ab_persist_tun">Sdjddnnsmssjhfjdd</string>

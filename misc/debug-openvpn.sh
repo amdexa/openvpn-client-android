@@ -9,7 +9,7 @@ PROJECT=.
 APP_ABI=armeabi-v7a
 
 AWK_SCRIPTS=${ANDROID_NDK_ROOT}/build/awk
-PACKAGE_NAME=de.blinkt.openvpn
+PACKAGE_NAME=com.amdexa.openvpn
 DEBUG_PORT=5039
 JDB_PORT=65534
 
@@ -55,7 +55,7 @@ get_pid_of ()
 
 adb_cmd push libs/armeabi-v7a/gdbserver /data/local/tmp/
 
-PID=$(get_pid_of /data/data/de.blinkt.openvpn/cache/miniopenvpn)
+PID=$(get_pid_of /data/data/com.amdexa.openvpn/cache/miniopenvpn)
 
 
 DEBUG_SOCKET=localhost:7788

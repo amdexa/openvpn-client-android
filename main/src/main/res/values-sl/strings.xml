@@ -310,7 +310,7 @@
     <string name="logview_options">Možnosti pogleda</string>
     <string name="unhandled_exception">Neobravnavana izjema: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Če imate na svoji napravi skrbniški dostop, lahko na svojo odgovornost namestite &lt;a href=\"http://xposed.info/\"&gt;ogrodje Xposed&lt;/a&gt; in &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;Modul za potrditev pog. okna VPN&lt;/a&gt;.</string>
+    <string name="faq_system_dialog_xposed">Če imate na svoji napravi skrbniški dostop, lahko na svojo odgovornost namestite &lt;a href=\"http://xposed.info/\"&gt;ogrodje Xposed&lt;/a&gt; in &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;Modul za potrditev pog. okna VPN&lt;/a&gt;.</string>
     <string name="full_licenses">Polna dovoljenja</string>
     <string name="blocklocal_summary">Omrežja, ki so neposredno povezana s krajevnimi vmesniki, ne bodo usmerjena preko VPN-a. Odstranitev izbire te možnosti bo preusmerila ves promet namenjen krajevnim omrežjem v VPN.</string>
     <string name="blocklocal_title">Zaobidi VPN za kraj. omr.</string>

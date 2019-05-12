@@ -14,7 +14,7 @@
 
 #include "jniglue.h"
 
-jobjectArray Java_de_blinkt_openvpn_core_NativeUtils_getIfconfig(JNIEnv* env)
+jobjectArray Java_com_amdexa_openvpn_core_NativeUtils_getIfconfig(JNIEnv* env)
 {
 
 	int sd;

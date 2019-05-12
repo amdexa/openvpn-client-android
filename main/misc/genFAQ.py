@@ -161,7 +161,7 @@ def main():
     loadstrres("src/main/res/values/strings.xml","default")
     
     #faqdom = dom.parse("src/main/res/layout/faq.xml")
-    faqdom = open("src/main/java/de/blinkt/openvpn/fragments/FaqFragment.java").readlines()
+    faqdom = open("src/main/java/com/amdexa/openvpn/fragments/FaqFragment.java").readlines()
     faq= genPage(faqdom,"default")
 
     open(faqpath + "/FAQ.html","w").write(template % {'content': faq})

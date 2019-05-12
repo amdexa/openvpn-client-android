@@ -5,7 +5,7 @@
   -->
 
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
-          package="de.blinkt.externalcertprovider">
+          package="com.amdexa.externalcertprovider">
 
 
     <application
@@ -17,7 +17,7 @@
     >
 
         <!--
-             OpenVPN for android will search for all application that have a activity that fulfils this
+             OpenVPN Client will search for all application that have a activity that fulfils this
              intent. It will be called when the user presses the select button and should return the selected
              alias in the android.security.extra.KEY_ALIAS extra on setResult.
 
@@ -27,7 +27,7 @@
         <activity android:name=".SelectCertificateActivity"
                   android:exported="true">
             <intent-filter>
-                <action android:name="de.blinkt.openvpn.api.ExternalCertificateConfiguration"/>
+                <action android:name="com.amdexa.openvpn.api.ExternalCertificateConfiguration"/>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
@@ -37,7 +37,7 @@
                 android:name=".ExternalCertService"
                 tools:ignore="ExportedService">
             <intent-filter>
-                <action android:name="de.blinkt.openvpn.api.ExternalCertificateProvider"/>
+                <action android:name="com.amdexa.openvpn.api.ExternalCertificateProvider"/>
             </intent-filter>
         </service>
     </application>

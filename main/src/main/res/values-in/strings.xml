@@ -313,7 +313,7 @@
     <string name="logview_options">Lihat pilihan</string>
     <string name="unhandled_exception">Tertangani pengecualian: %1$s \ n \ n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s \ n \ n%2$s</string>
-    <string name="faq_system_dialog_xposed">Jika Anda telah berakar perangkat Android Anda Anda dapat menginstal <a href="http://xposed.info/"> Xposed kerangka </a> dan <a href = "http://repo.xposed.info/ modul / de.blinkt.vpndialogxposed "> VPN Dialog mengkonfirmasi modul </a> risiko Anda sendiri\"</string>
+    <string name="faq_system_dialog_xposed">Jika Anda telah berakar perangkat Android Anda Anda dapat menginstal <a href="http://xposed.info/"> Xposed kerangka </a> dan <a href = "http://repo.xposed.info/ modul / com.amdexa.vpndialogxposed "> VPN Dialog mengkonfirmasi modul </a> risiko Anda sendiri\"</string>
     <string name="full_licenses">Lisensi penuh</string>
     <string name="blocklocal_summary">Jaringan langsung terhubung ke antarmuka lokal tidak akan diarahkan melalui VPN. Tidak memilih opsi ini akan mengarahkan semua lalu lintas menjorok untuk jaringan lokal ke VPN.</string>
     <string name="blocklocal_title">Bypass VPN for local networks</string>

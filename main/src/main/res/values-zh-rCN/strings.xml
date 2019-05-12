@@ -278,7 +278,7 @@
     <string name="tls_remote_deprecated">tls-remote(不再被使用)</string>
     <string name="help_translate">你可以通过访问 http://crowdin.net/project/ics-openvpn/invite 来帮助翻译</string>
     <string name="prompt">%1$s 正在试图控制 %2$s</string>
-    <string name="remote_warning">如果继续，你将允许该应用完全控制 OpenVPN for Android，并拦截所有网络流量。<b>除非你信任该应用，否则请不要继续。</b>如果该应用是恶意应用，你需要自行承担所有的后果。</string>
+    <string name="remote_warning">如果继续，你将允许该应用完全控制 OpenVPN Client，并拦截所有网络流量。<b>除非你信任该应用，否则请不要继续。</b>如果该应用是恶意应用，你需要自行承担所有的后果。</string>
     <string name="remote_trust">我信任此应用。</string>
     <string name="no_external_app_allowed">没有允许使用外部 API 的应用</string>
     <string name="allowed_apps">经 VPN 代理的应用程序： %s</string>
@@ -316,7 +316,7 @@
     <string name="logview_options">查看选项</string>
     <string name="unhandled_exception">未处理的异常： %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">如果您的 Android 设备已经 root，您可以自担风险安装&lt;a href=\"http://xposed.info/\"&gt;Xposed 框架&lt;/a&gt; 和 &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;VPN 对话框确认模块&lt;/a&gt;</string>
+    <string name="faq_system_dialog_xposed">如果您的 Android 设备已经 root，您可以自担风险安装&lt;a href=\"http://xposed.info/\"&gt;Xposed 框架&lt;/a&gt; 和 &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;VPN 对话框确认模块&lt;/a&gt;</string>
     <string name="full_licenses">完整授权</string>
     <string name="blocklocal_summary">不会将网络直接连接到本地接口路由通过 VPN。取消选中此选项会将缩进到 VPN 的本地网络的所有流量重都定向。</string>
     <string name="blocklocal_title">绕过本地地址</string>
@@ -355,17 +355,17 @@
     <string name="duplicate_vpn">重复的VPN配置文件</string>
     <string name="duplicate_profile_title">创建配置文件副本： %s</string>
     <string name="show_log">显示日志</string>
-    <string name="faq_android_clients">OpenVPN 的 Android 客户端目前市面上已经有了一些了，其中最常见的有 OpenVPN for Android（也就本应用）、OpenVPN Connect 以及 OpenVPN Settings 。
-这些客户端可以被分为两类：使用官方VPNService API (Android 4.0+) 并且不需要 root 权限的 OpenVPN for Android 和 OpenVPN Connect 以及需要 root 权限的 OpenVPN Settings 。</string>
+    <string name="faq_android_clients">OpenVPN 的 Android 客户端目前市面上已经有了一些了，其中最常见的有 OpenVPN Client（也就本应用）、OpenVPN Connect 以及 OpenVPN Settings 。
+这些客户端可以被分为两类：使用官方VPNService API (Android 4.0+) 并且不需要 root 权限的 OpenVPN Client 和 OpenVPN Connect 以及需要 root 权限的 OpenVPN Settings 。</string>
     <string name="faq_androids_clients_title">不同OpenVPN安卓客户端的区别</string>
     <string name="ignore_multicast_route">忽略多播路由:%s</string>
-    <string name="ab_only_cidr">安卓只支持CIDR路由。由于非CIDR路由几乎不用，OpenVPN for Android将使用/32路由并对非CIDR路由发出警告。</string>
+    <string name="ab_only_cidr">安卓只支持CIDR路由。由于非CIDR路由几乎不用，OpenVPN Client将使用/32路由并对非CIDR路由发出警告。</string>
     <string name="ab_tethering_44">在连接VPN时手机热点依然工作，但连接不会通过VPN。</string>
     <string name="ab_kitkat_mss">早期的KitKat版本在TCP连接上设置了错误的MSS值 (#61948)。OpenVPN将自动启动mssfix选项来解决这个Bug。</string>
     <string name="ab_proxy">在DNS服务没有设置的情况下，安卓会继续使用手机wifi的代理设置。 安卓OpenVPN会在日志文件中留下警告信息。在VPN设置DNS服务时，安卓不是代理；安卓系统里没有为vpn连接设置代理的程序接口。</string>
     <string name="ab_lollipop_reinstall">在被卸载或重新安装时，VPN程序会停止工作；详细信息请参看 #80074</string>
     <string name="ab_not_route_to_vpn">配置的客户端IP及其网络掩码中的IP不会代理到VPN。 OpenVPN通过显式地添加一个可应对客户端IP及其网络掩码的路由来解决这个错误</string>
-    <string name="ab_persist_tun">Opening a tun device while another tun device is active, which is used for persist-tun support, crashes the VPNServices on the device. A reboot is required to make VPN work again. OpenVPN for Android tries to avoid reopening the tun device and if really needed first closes the current TUN before opening the new TUN device to avoid to crash. This may lead to a short window where packets are sent over the non-VPN connection. Even with this workaround the VPNServices sometimes crashes and requires a reboot of the device.</string>
+    <string name="ab_persist_tun">Opening a tun device while another tun device is active, which is used for persist-tun support, crashes the VPNServices on the device. A reboot is required to make VPN work again. OpenVPN Client tries to avoid reopening the tun device and if really needed first closes the current TUN before opening the new TUN device to avoid to crash. This may lead to a short window where packets are sent over the non-VPN connection. Even with this workaround the VPNServices sometimes crashes and requires a reboot of the device.</string>
     <string name="ab_secondary_users">对于次级用户而言，VPN是不会起作用的。</string>
     <string name="ab_kitkat_reconnect">有多个用户报告说，在使用VPN应用时，移动连接/移动数据连接经常会掉线。该行为似乎只影响一些移动运营商/设备组合，目前为止尚未确定原因及bug解决方案。</string>
     <string name="ab_vpn_reachability_44">只有目标可以通过VPN，可以到达VPN没有达到。 IPv6的VPN不能在所有工作。</string>
@@ -385,7 +385,7 @@
     <string name="ab_persist_tun_title">保持 tun 通道模式</string>
     <string name="version_and_later">%s 及更高版本</string>
     <string name="tls_cipher_alert_title">连接失败 SSL23_GET_SERVER_HELLO：SSLv3警报 握手失败</string>
-    <string name="tls_cipher_alert">较新的OpenVPN for Android版本 (0.6.29/2015年3月) 为 (tls-cipher \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\") 密码套件使用更安全的默认设置。不幸的是，省略了不太安全的加密套件和导出加密套件，尤其是完全正向保密密码套件 (差分哈夫曼编码) 的缺失会导致一些问题。这通常是由用心良苦但执行力很差的家伙试图通过设置服务器上的TLS套件或在一些嵌入式操作系统 (如软路由系统Mikro Tik) 上定制SSL以加强TLS安全性导致。\n 要解决导致这个问题需要在服务器上把TLS-CIPHER配置为合理的默认值，比如tls-cipher \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\"。如果你搞不定系统管理员，可以在客户端解决，在Android客户端添加自定义选项 tls-cipher DEFAULT即可。</string>
+    <string name="tls_cipher_alert">较新的OpenVPN Client版本 (0.6.29/2015年3月) 为 (tls-cipher \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\") 密码套件使用更安全的默认设置。不幸的是，省略了不太安全的加密套件和导出加密套件，尤其是完全正向保密密码套件 (差分哈夫曼编码) 的缺失会导致一些问题。这通常是由用心良苦但执行力很差的家伙试图通过设置服务器上的TLS套件或在一些嵌入式操作系统 (如软路由系统Mikro Tik) 上定制SSL以加强TLS安全性导致。\n 要解决导致这个问题需要在服务器上把TLS-CIPHER配置为合理的默认值，比如tls-cipher \"DEFAULT:!EXP:!PSK:!SRP:!kRSA\"。如果你搞不定系统管理员，可以在客户端解决，在Android客户端添加自定义选项 tls-cipher DEFAULT即可。</string>
     <string name="message_no_user_edit">此档案已从外部程序 (%s) 加载并被标记为不可用户编辑。</string>
     <string name="crl_file">证书吊销列表</string>
     <string name="service_restarted">重新启动OpenVPN服务中 (应用程序崩溃-可能是真崩溃或由于内存不够用被kill)</string>
@@ -395,7 +395,7 @@
     <string name="clear_log_on_connect">建立新连接时清空日志</string>
     <string name="connect_timeout">连接超时</string>
     <string name="no_allowed_app">没有允许的应用程序被添加。加入本应用 (%s) 以保证允许的应用程序列表中至少有一个应用程序从而禁止其他所有应用</string>
-    <string name="query_permissions_sdcard">OpenVPN for Android 可以尝试自动在 SD 卡上寻找缺失的文件。点击此消息开始请求权限许可。</string>
+    <string name="query_permissions_sdcard">OpenVPN Client 可以尝试自动在 SD 卡上寻找缺失的文件。点击此消息开始请求权限许可。</string>
     <string name="protocol">协议</string>
     <string name="enabled_connection_entry">启用</string>
     <string name="abi_mismatch">Preferred native ABI precedence of this device (%1$s) and ABI reported by native libraries (%2$s) mismatch</string>

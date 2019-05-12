@@ -5,10 +5,10 @@
   -->
 
 <resources>
-    <style name="blinkt.baseTheme" parent="android:Theme.DeviceDefault.Light" />
-    <style name="blinkt" parent="blinkt.baseTheme" />
+    <style name="amdexa.baseTheme" parent="android:Theme.DeviceDefault.Light" />
+    <style name="amdexa" parent="amdexa.baseTheme" />
 
-    <style name="blinkt.dialog" parent="android:Theme.DeviceDefault.Light.Dialog" />
+    <style name="amdexa.dialog" parent="android:Theme.DeviceDefault.Light.Dialog" />
 
     <style name="item">
         <item name="android:layout_width">match_parent</item>
@@ -53,7 +53,7 @@
     </style>
 
 
-    <style name="blinkt.translucent" parent="blinkt.dialog">
+    <style name="amdexa.translucent" parent="amdexa.dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>

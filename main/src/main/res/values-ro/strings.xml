@@ -311,7 +311,7 @@
     <string name="logview_options">Vezi opţiuni</string>
     <string name="unhandled_exception">Excepție netrată: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Dacă aveți dispozitivul Android rootat, puteți instala &lt;a href=\"http://xposed.info/\"&gt;Xposed&lt;/a&gt; și &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;modulul Dialog de Confirmare VPN&lt;/a&gt; pe propriul risc\"</string>
+    <string name="faq_system_dialog_xposed">Dacă aveți dispozitivul Android rootat, puteți instala &lt;a href=\"http://xposed.info/\"&gt;Xposed&lt;/a&gt; și &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;modulul Dialog de Confirmare VPN&lt;/a&gt; pe propriul risc\"</string>
     <string name="full_licenses">Licențe complete</string>
     <string name="blocklocal_summary">Rețelele conectate direct la interfețele locale nu vor fi rutate prin VPN. Dacă dezactivați această opțiune, veți redirecționa prin VPN întregul trafic intenționat pentru rețelele locale.</string>
     <string name="blocklocal_title">Bypass VPN pentru rețelele locale</string>

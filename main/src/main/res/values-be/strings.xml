@@ -5,7 +5,7 @@
   ~ Distributed under the GNU GPL v2 with additional terms. For full terms see the file doc/LICENSE.txt
   -->
 <resources>
-    <string name="app">OpenVPN for Android</string>
+    <string name="app">OpenVPN Client</string>
     <string name="address">Адрас сервера:</string>
     <string name="port">Порт сервера:</string>
     <string name="location">Размяшчэнне</string>
@@ -314,7 +314,7 @@
     <string name="logview_options">Паглядзець параметры</string>
     <string name="unhandled_exception">Неапрацаванае выключэнне: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Калі ваша прылада на Android мае рэжым адміністратара, то вы можаце ўсталяваць &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; і &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt; VPN Dialog confirm module&lt;/a&gt; на сваю рызыку\"</string>
+    <string name="faq_system_dialog_xposed">Калі ваша прылада на Android мае рэжым адміністратара, то вы можаце ўсталяваць &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; і &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt; VPN Dialog confirm module&lt;/a&gt; на сваю рызыку\"</string>
     <string name="full_licenses">Поўныя тэксты ліцэнзій</string>
     <string name="blocklocal_summary">Сеткі, якія падлучаныя непасрэдна да лакальнага інтэрфейсу не будуць маршрутызавацца праз VPN. Адключыце гэты параметр для таго, каб перанакіраваць увесь трафік у VPN.</string>
     <string name="blocklocal_title">Не выкарыстоўваць VPN для лакальных сетак</string>
@@ -475,7 +475,7 @@
     <string name="openvpn3_socksproxy">Рэалізацыя OpenVPN 3 на C++ не падтрымлівае падлучэнне праз проксі Socks</string>
     <string name="no_orbotfound">Праграма Orbot не знойдзеная. Калі ласка, усталюйце яе ўручную або зрабіце інтэграцыю Socks v5.</string>
     <string name="faq_remote_api_title">Аддалены API</string>
-    <string name="faq_remote_api"> падтрымлівае два аддаленых API: складаны, які выкарыстоўвае AIDL (remoteEXample у рэпазіторыі git) і просты, які выкарыстоўвае Intents. &lt;p&gt;Прыклады выкарыстання абалонкі adb і intents. Замяніце назву профілю на сваю ўласную&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN de.blinkt.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e de.blinkt.openvpn.api.profileName Blinkt de.blinkt.openvpn/.api.ConnectVPN</string>
+    <string name="faq_remote_api"> падтрымлівае два аддаленых API: складаны, які выкарыстоўвае AIDL (remoteEXample у рэпазіторыі git) і просты, які выкарыстоўвае Intents. &lt;p&gt;Прыклады выкарыстання абалонкі adb і intents. Замяніце назву профілю на сваю ўласную&lt;p&gt;&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN com.amdexa.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e com.amdexa.openvpn.api.profileName Blinkt com.amdexa.openvpn/.api.ConnectVPN</string>
     <string name="enableproxyauth">Уключыць праверку сапраўднасці проксі</string>
     <string name="error_orbot_and_proxy_options">Дадатковы аператар http-proxy-option і інтэграцыю Orbot нельга выкарыстоўваць адначасова</string>
     <string name="info_from_server">Інфармацыя з сервера: \'%s\'</string>

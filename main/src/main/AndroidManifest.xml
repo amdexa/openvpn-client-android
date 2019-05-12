@@ -4,7 +4,7 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="de.blinkt.openvpn">
+    package="com.amdexa.openvpn">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -25,14 +25,14 @@
 
 
     <application
-        android:name=".core.ICSOpenVPNApplication"
+        android:name=".core.OpenVPNApplication"
         android:allowBackup="true"
         android:appCategory="productivity"
         android:banner="@mipmap/banner_tv"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/openvpn_launcher"
         android:label="@string/app"
         android:supportsRtl="true"
-        android:theme="@style/blinkt"
+        android:theme="@style/amdexa"
         tools:ignore="UnusedAttribute">
 
 
@@ -49,7 +49,7 @@
             android:excludeFromRecents="true"
             android:noHistory="true"
             android:taskAffinity=".DisconnectVPN"
-            android:theme="@style/blinkt.dialog" />
+            android:theme="@style/amdexa.dialog" />
         <activity
             android:name=".activities.LogWindow"
             android:allowTaskReparenting="true"
@@ -84,7 +84,7 @@
             android:process=":openvpn"
             tools:ignore="ExportedService">
             <intent-filter>
-                <action android:name="de.blinkt.openvpn.api.IOpenVPNAPIService" />
+                <action android:name="com.amdexa.openvpn.api.IOpenVPNAPIService" />
             </intent-filter>
         </service>
         <service
@@ -177,7 +177,7 @@
             android:excludeFromRecents="true"
             android:label="@string/vpn_launch_title"
             android:taskAffinity=".LaunchVPN"
-            android:theme="@style/blinkt.dialog"
+            android:theme="@style/amdexa.dialog"
             tools:ignore="ExportedActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -191,7 +191,7 @@
             android:excludeFromRecents="true"
             android:label="@string/vpn_launch_title"
             android:taskAffinity=".LaunchVPN"
-            android:theme="@style/blinkt.dialog"
+            android:theme="@style/amdexa.dialog"
             tools:ignore="ExportedActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -214,7 +214,7 @@
 
         <provider
             android:name=".FileProvider"
-            android:authorities="de.blinkt.openvpn.FileProvider"
+            android:authorities="com.amdexa.openvpn.FileProvider"
             android:exported="true"
             android:grantUriPermissions="true"
             tools:ignore="ExportedContentProvider" />
@@ -232,7 +232,7 @@
             android:parentActivityName=".activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="de.blinkt.openvpn.activities.MainActivity" />
+                android:value="com.amdexa.openvpn.activities.MainActivity" />
         </activity>
         <activity
             android:name=".api.RemoteAction"

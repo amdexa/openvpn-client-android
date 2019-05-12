@@ -312,7 +312,7 @@
     <string name="logview_options">Zobrazit možnosti</string>
     <string name="unhandled_exception">Neošetřená výjimka: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Pokud máš rootnuté zařízení, můžeš nainstalovat &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; a &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;VPN potvrzovací modul&lt;/a&gt; na vlastní nebezpečí\"</string>
+    <string name="faq_system_dialog_xposed">Pokud máš rootnuté zařízení, můžeš nainstalovat &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; a &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;VPN potvrzovací modul&lt;/a&gt; na vlastní nebezpečí\"</string>
     <string name="full_licenses">Plné licence</string>
     <string name="blocklocal_summary">Sítě přímo připojené na lokální rozhraní nebudou směrovány skrze VPN. Odškrtnutím této volby bude přesměrován všechen lokální provoz do VPN.</string>
     <string name="blocklocal_title">Nepoužívat VPN pro lokální sítě</string>

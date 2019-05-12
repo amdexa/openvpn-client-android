@@ -312,7 +312,7 @@
     <string name="logview_options">Toon opties</string>
     <string name="unhandled_exception">Niet-afgehandelde uitzondering: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed">Als u uw Android-apparaat hebt geroot, kun je de &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; en de &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;VPN Dialoog bevestigings module&lt;/a&gt; op eigen risico installeren\"</string>
+    <string name="faq_system_dialog_xposed">Als u uw Android-apparaat hebt geroot, kun je de &lt;a href=\"http://xposed.info/\"&gt;Xposed framework&lt;/a&gt; en de &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;VPN Dialoog bevestigings module&lt;/a&gt; op eigen risico installeren\"</string>
     <string name="full_licenses">Volledige licenties</string>
     <string name="blocklocal_summary">Netwerken die rechtstreeks zijn verbonden met de lokale interfaces, worden niet via de VPN gerouteerd. Als u deze optie uitschakelt, worden alle verkeer gericht op lokale netwerken omgeleid naar de VPN.</string>
     <string name="blocklocal_title">VPN passeren voor lokale netwerken</string>

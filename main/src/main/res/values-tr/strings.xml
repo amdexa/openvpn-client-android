@@ -314,7 +314,7 @@
     <string name="logview_options">Görünüm seçenekleri</string>
     <string name="unhandled_exception">Kural dışı durum: %1$s\n\n%2$s</string>
     <string name="unhandled_exception_context">%3$s: %1$s\n\n%2$s</string>
-    <string name="faq_system_dialog_xposed"> Android cihazınız root\'lu ise &lt;a href=\"http://xposed.info/\"&gt;Xposed çalışma çerçevesini&lt;/a&gt; ve &lt;a href=\"http://repo.xposed.info/module/de.blinkt.vpndialogxposed\"&gt;VPN Pencere onay modülünü&lt;/a&gt; kendi sorumluluğunuzda yükleyebilirsiniz\"</string>
+    <string name="faq_system_dialog_xposed"> Android cihazınız root\'lu ise &lt;a href=\"http://xposed.info/\"&gt;Xposed çalışma çerçevesini&lt;/a&gt; ve &lt;a href=\"http://repo.xposed.info/module/com.amdexa.vpndialogxposed\"&gt;VPN Pencere onay modülünü&lt;/a&gt; kendi sorumluluğunuzda yükleyebilirsiniz\"</string>
     <string name="full_licenses">Tam lisanslar</string>
     <string name="blocklocal_summary">Doğrudan yerel arabirimlere bağlı ağlar VPN üzerinden yönlendirilmez. Bu seçenekteki işaretin kaldırılması, yerel ağlar için amaçlanmış tüm trafiği VPN\'e yönlendirir.</string>
     <string name="blocklocal_title">Yerel ağlar için VPN\'i yoksay</string>
@@ -487,7 +487,7 @@
     <string name="openvpn3_socksproxy">OpenVPN 3 C ++ uygulaması, Socks Vekil Sunucu üzerinden bağlanmayı desteklemiyor</string>
     <string name="no_orbotfound">Orbot uygulaması bulunamadı. Lütfen Orbot\'u kurun veya manuel Socks v5 entegrasyonu kullanın.</string>
     <string name="faq_remote_api_title">Uzak API</string>
-    <string name="faq_remote_api">Android için OpenVPN iki uzak API yi destekliyor, AIDL kullanan gelişmiş bir API (git deposundaki remoteEXample) ve Intent leri kullanan basit API.&lt;p&gt; Örnekler adb kabuğunu ve intentleri kullanıyor. Profil ismini kendi profil isminizle değiştirin&lt;p&gt;&lt;p&gt;adb shell am start-activity -a android.intent.action.MAIN de.blinkt.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e de.blinkt.openvpn.api.profileName Blinkt de.blinkt.openvpn/.api.ConnectVPN</string>
+    <string name="faq_remote_api">Android için OpenVPN iki uzak API yi destekliyor, AIDL kullanan gelişmiş bir API (git deposundaki remoteEXample) ve Intent leri kullanan basit API.&lt;p&gt; Örnekler adb kabuğunu ve intentleri kullanıyor. Profil ismini kendi profil isminizle değiştirin&lt;p&gt;&lt;p&gt;adb shell am start-activity -a android.intent.action.MAIN com.amdexa.openvpn/.api.DisconnectVPN&lt;p&gt; adb shell am start-activity -a android.intent.action.MAIN -e com.amdexa.openvpn.api.profileName Blinkt com.amdexa.openvpn/.api.ConnectVPN</string>
     <string name="enableproxyauth">Proxy Kimlik Doğrulamasını Etkinleştir</string>
     <string name="error_orbot_and_proxy_options">Ekstra http-vekil sunucu-seçenek bildirimi ve Orbot entegrasyonu aynı anda kullanılamaz</string>
     <string name="info_from_server">Sunucudan gelen bilgi: \'%s\'</string>
